@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SecondAssessmentRecyclerView</string>
+    <string-array name="countries">
+        <item>Nepal</item>
+        <item>USA</item>
+        <item>India</item>
+        <item>Korea</item>
+        <item>Chine</item>
+        <item>Japan</item>
+    </string-array>
+</resources>
