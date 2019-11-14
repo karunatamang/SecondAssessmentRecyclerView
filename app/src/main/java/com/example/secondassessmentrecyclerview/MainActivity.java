@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     RadioGroup radioGroup;
     Spinner spinner;
     Button button, btnView;
+
     //CalendarView calendarView;
     String name, gender, dob, country, address, email, phone, image;
     String[] countries = {"Select an Option", "Nepal", "USA", "India", "Korea", "Maldives", "Myanmar", "Pakistan", "Afganistan"};
@@ -81,14 +82,6 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         autoCompleteTextView.setThreshold(1);
 
 
-        //Creating a custom Adapter for spinner to display "Choose a option" option.
-//        int hidingItemIndex = 0;
-//        DesignerAdapter dataAdapter = new DesignerAdapter(this, R.layout.spinner_values, countries, hidingItemIndex);
-//        dataAdapter.setDropDownViewResource(R.layout.spinner_values);
-//
-//        //using array adapter to pass the value into spinner_values.xml file.
-//        spinner.setAdapter(dataAdapter);//using set adapter to pass the value into spinner.
-//        //use listView instead of spinner.
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.countries, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
